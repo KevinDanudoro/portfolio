@@ -9,14 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       width: {
-        content: "70%",
+        "content-lg": "70%",
+        content: "90%",
       },
-      backgroundColor: {
+      colors: {
         white: "#FFFFFF",
-        gray: "#556070",
+        gray: "#EDD8FF",
         "dark-gray": "#132238",
         purple: "#A53DFF",
         "dark-purple": "#8431CC",
+      },
+      backgroundImage: {
+        "purple-gradient": "radial-gradient(circle,#DA4DF177,transparent 50%);",
+        "blue-gradient": "radial-gradient(circle,#C4F5E977,transparent 50%);",
       },
     },
   },

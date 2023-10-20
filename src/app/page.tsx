@@ -1,10 +1,11 @@
-import Topbar from "@/components/Navbar/Topbar";
+import Hero from "@/components/section/Hero";
 
 export default function Home() {
   return (
     <main>
-      <Topbar />
-      asad
+      <section>
+        <Hero />
+      </section>
     </main>
   );
 }

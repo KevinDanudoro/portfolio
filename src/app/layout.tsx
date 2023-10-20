@@ -1,3 +1,5 @@
+import Topbar from "@/components/Navbar/Topbar";
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
@@ -16,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-black ${workSans.className}`}>{children}</body>
+      <body className={cn(workSans.className, "text-dark-gray")}>
+        <header>
+          <Topbar />
+        </header>
+        {children}
+      </body>
     </html>
   );
 }

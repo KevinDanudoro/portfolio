@@ -17,7 +17,7 @@ const Button: FC<ButtonProps> = ({
     <button
       className={cn(
         className,
-        "px-4 py-2 bg-purple hover:bg-dark-purple duration-150 rounded-md text-white font-medium text-base "
+        "px-4 py-2 bg-purple hover:bg-dark-purple duration-150 rounded-md text-white font-semibold text-base "
       )}
       {...props}
     >
