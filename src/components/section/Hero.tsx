@@ -12,7 +12,8 @@ const Hero: FC<HeroProps> = ({}) => {
       <div className="lg:w-content-lg w-content grid lg:grid-cols-[1fr,auto] grid-rows-[auto,1fr] mt-32 lg:gap-20 gap-14 lg:items-center lg:justify-items-start justify-items-center">
         <div className="flex flex-col">
           <h1 className="text-5xl font-semibold leading-[110%]">
-            {"Hello, I'm Kevin Danudoro"}
+            {"Hello, I'm"} <br />
+            Kevin Danudoro
           </h1>
           <p className="mt-4 whitespace-pre-line">
             {`I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.`}
