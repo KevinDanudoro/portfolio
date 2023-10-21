@@ -12,16 +12,19 @@ const LinkList: FC<LinkListProps> = ({ color = "dark" }) => {
       className={`flex gap-8 font-normal ${color === "light" && "text-white"}`}
     >
       <li>
-        <Link href="/">Home</Link>
+        <Link href="#hero">Home</Link>
       </li>
       <li>
-        <Link href="/">About</Link>
+        <Link href="#about">About</Link>
       </li>
       <li>
-        <Link href="/">Portfolio</Link>
+        <Link href="#skills">skills</Link>
       </li>
       <li>
-        <Link href="/">Certificates</Link>
+        <Link href="#portfolio">Portfolio</Link>
+      </li>
+      <li>
+        <Link href="#certificate">Certificates</Link>
       </li>
     </ul>
   );

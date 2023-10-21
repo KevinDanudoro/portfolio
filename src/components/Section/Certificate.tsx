@@ -17,11 +17,43 @@ const CredentialButton = ({ href }: { href: string }) => (
 
 const certificateContents = [
   {
-    title: "Android Developer Expert",
+    title: "Android Expert",
     header: "Sep 23, 2023 - Sep 23, 2026",
     image: "/image/dicoding-logo.jpg",
     button: (
       <CredentialButton href="https://www.dicoding.com/certificates/81P277EDNZOY" />
+    ),
+  },
+  {
+    title: "Android Intermediate",
+    header: "Sep 23, 2023 - Sep 23, 2026",
+    image: "/image/dicoding-logo.jpg",
+    button: (
+      <CredentialButton href="https://www.dicoding.com/certificates/1OP800WW2XQK" />
+    ),
+  },
+  {
+    title: "Android Fundamental",
+    header: "Sep 23, 2023 - Sep 23, 2026",
+    image: "/image/dicoding-logo.jpg",
+    button: (
+      <CredentialButton href="https://www.dicoding.com/certificates/1OP80DD02XQK" />
+    ),
+  },
+  {
+    title: "SOLID Programming",
+    header: "Sep 23, 2023 - Sep 23, 2026",
+    image: "/image/dicoding-logo.jpg",
+    button: (
+      <CredentialButton href="https://www.dicoding.com/certificates/1OP80004VXQK" />
+    ),
+  },
+  {
+    title: "Android Beginner",
+    header: "Sep 23, 2023 - Sep 23, 2026",
+    image: "/image/dicoding-logo.jpg",
+    button: (
+      <CredentialButton href="https://www.dicoding.com/certificates/2VX3Y9E3NPYQ" />
     ),
   },
   {
@@ -66,8 +98,8 @@ const Certificate: FC<CertificateProps> = ({}) => {
       <div className="w-content lg:w-content-lg flex justify-center items-center mx-auto flex-col gap-4">
         <h2 className="text-3xl font-semibold text-center">Certificates</h2>
         <p className="md:w-1/2 w-2/3 text-center">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration.
+          Participate in certification programs in the field of Android and
+          Website application development
         </p>
         <div className="w-full mt-8">
           <Slider>
@@ -78,7 +110,6 @@ const Certificate: FC<CertificateProps> = ({}) => {
                 header={content.header}
                 image={content.image}
                 button={content.button}
-                className="min-h-[25rem]"
               />
             ))}
           </Slider>

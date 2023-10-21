@@ -30,7 +30,7 @@ const Hero: FC = ({}) => {
             Kevin Danudoro
           </h1>
           <p className="mt-4 whitespace-pre-line">
-            {`I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.`}
+            {`I'm a computer engineering undergraduate at Brawijaya University. Experienced and passionate to web and Android app development. I'm dedicated to a continuous learning mindset, constantly seeking new knowledge and skills in diverse software development areas.`}
           </p>
 
           <Button className="mt-4 w-fit">Say Hello!</Button>
@@ -39,19 +39,15 @@ const Hero: FC = ({}) => {
             <li>
               <Showcase
                 className="rounded-l-md"
-                title="17 Y"
+                title="1 Y"
                 desc="Experience"
               />
             </li>
             <li>
-              <Showcase title="250+" desc="Project" />
+              <Showcase title="3.94" desc="GPA" />
             </li>
             <li>
-              <Showcase
-                className="rounded-r-md"
-                title="58"
-                desc="Happy Client"
-              />
+              <Showcase className="rounded-r-md" title="2" desc="Projects" />
             </li>
           </ul>
         </div>

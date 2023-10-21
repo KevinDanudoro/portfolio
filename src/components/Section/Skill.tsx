@@ -12,12 +12,17 @@ const Skill: FC<SkillProps> = ({}) => {
         <div className="lg:w-auto sm:w-[60%] w-full">
           <h2 className="text-3xl font-semibold">Skills</h2>
           <p className="mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
-            arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices
-            eget lorem ac vestibulum.
+            Experienced in developing web applications using{" "}
+            <span className="font-semibold">NextJS</span> framework and{" "}
+            <span className="font-semibold">Tailwindcss</span>. Utilize the
+            rendering, caching, routing, and asset optimization features of
+            NextJS to build a website with excelent performance.
             <br className="mb-2" />
-            Suspendis imperdiet Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nulla purus arcu, varius eget velit non.
+            Experienced in developing{" "}
+            <span className="font-semibold">Android</span> applications using{" "}
+            <span className="font-semibold">Kotlin - XML</span> and{" "}
+            <span className="font-semibold">Jetpack Compose</span> with
+            implementing clean architecture.
           </p>
         </div>
         <div className="flex flex-col flex-wrap lg:w-full sm:w-1/2 w-full aspect-square content-center gap-x-4 lg:row-start-auto row-start-2">

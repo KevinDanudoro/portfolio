@@ -1,25 +1,25 @@
 import Certificate from "@/components/Section/Certificate";
 import Hero from "@/components/Section/Hero";
-import Introduction from "@/components/Section/Introduction";
+import About from "@/components/Section/About";
 import Portfolio from "@/components/Section/Portfolio";
 import Skill from "@/components/Section/Skill";
 
 export default function Home() {
   return (
     <main>
-      <section>
+      <section id="hero">
         <Hero />
       </section>
-      <section className="relative z-10">
-        <Introduction />
+      <section id="about" className="relative z-10">
+        <About />
       </section>
-      <section className="-mt-20">
+      <section id="skills" className="-mt-20">
         <Skill />
       </section>
-      <section>
+      <section id="portfolio">
         <Portfolio />
       </section>
-      <section>
+      <section id="certificate">
         <Certificate />
       </section>
     </main>

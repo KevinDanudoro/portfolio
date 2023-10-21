@@ -4,12 +4,13 @@ import CardLayout from "../Card/CardLayout";
 import Image from "next/image";
 import Button from "../Button/Button";
 import { Download } from "lucide-react";
+import Link from "next/link";
 
-interface IntroductionProps {}
+interface AboutProps {}
 
-const Introduction: FC<IntroductionProps> = ({}) => {
+const About: FC<AboutProps> = ({}) => {
   return (
-    <div className="w-full flex justify-center lg:mt-10 mt-20">
+    <div className="w-full flex justify-center lg:pt-10 pt-20">
       <CardLayout className="w-content lg:w-content-lg p-10">
         <div className="flex lg:gap-20 gap-10 items-center md:flex-row flex-col">
           <Image
@@ -22,20 +23,21 @@ const Introduction: FC<IntroductionProps> = ({}) => {
 
           <div className="flex flex-col gap-4">
             <h2 className="text-3xl font-semibold">
-              I am Professional User Experience Designer
+              {"I'am a Beginner Front-End Developer"}
             </h2>
 
             <p className="mt-2">
               I design and develop services for customers specializing creating
-              stylish, modern websites, web services and online stores. My
-              passion is to design digital user experiences.{" "}
-              <br className="mb-2" /> I design and develop services for
-              customers specializing creating stylish, modern websites, web
-              services.
+              stylish and modern apps based on exisisting design.{" "}
+              <br className="mb-2" /> I develop applications using the latest
+              technology and implement best practices to optimize application
+              performance.
             </p>
 
             <div className="flex gap-2 mt-2">
-              <Button>My Project</Button>
+              <Link href="#portfolio">
+                <Button>My Project</Button>
+              </Link>
               <Button variant="outline" className="flex items-center">
                 <Download /> Download CV
               </Button>
@@ -47,4 +49,4 @@ const Introduction: FC<IntroductionProps> = ({}) => {
   );
 };
 
-export default Introduction;
+export default About;

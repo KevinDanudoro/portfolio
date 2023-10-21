@@ -13,7 +13,7 @@ const HeroAnimation: FC<HeroAnimationProps> = ({}) => {
   return (
     <Lottie
       animationData={LottieAnimation}
-      className="object-contain w-full min-w-[25em] max-w-sm row-start-1 lg:row-start-auto"
+      className="object-contain w-full md:min-w-[25em] min-w-0 max-w-sm row-start-1 lg:row-start-auto"
     />
   );
 };
