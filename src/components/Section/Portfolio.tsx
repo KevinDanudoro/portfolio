@@ -47,7 +47,7 @@ interface PortfolioProps {}
 
 const Portfolio: FC<PortfolioProps> = ({}) => {
   return (
-    <div className="w-full mt-24">
+    <div className="w-full my-24">
       <div className="w-content lg:w-content-lg flex justify-center items-center mx-auto flex-col gap-4">
         <h2 className="text-3xl font-semibold text-center">Portfolio</h2>
         <p className="md:w-1/2 w-2/3 text-center">

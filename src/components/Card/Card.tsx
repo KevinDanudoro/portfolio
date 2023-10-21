@@ -2,30 +2,47 @@ import React from "react";
 import type { FC } from "react";
 import CardLayout from "./CardLayout";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
-interface CardProps {
+interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   image: string;
   title: string;
-  desc: string;
+  desc?: string;
   header?: string;
   button?: React.ReactNode;
 }
 
-const Card: FC<CardProps> = ({ image, title, desc, button, header }) => {
+const Card: FC<CardProps> = ({
+  image,
+  title,
+  desc,
+  button,
+  header,
+  className,
+  ...props
+}) => {
   return (
-    <CardLayout className="grid grid-rows-[auto,1fr] overflow-hidden rounded-lg shadow-card pt-0">
+    <CardLayout
+      className={cn(
+        "grid grid-rows-[auto,1fr] overflow-hidden rounded-lg shadow-card pt-0",
+        className
+      )}
+      {...props}
+    >
       <Image
         src={image}
         alt="card image"
         width={256}
         height={256}
-        className="object-cover w-full h-48"
+        className="object-cover w-full"
       />
       <div className="p-4 flex flex-col gap-1">
-        <small className="text-slate-600 font-medium">{header}</small>
+        {header && (
+          <small className="text-slate-600 font-medium">{header}</small>
+        )}
         <h3 className="text-lg font-medium">{title}</h3>
-        <p className="text-sm font-light mb-4">{desc}</p>
-        {button}
+        {desc && <p className="text-sm font-light">{desc}</p>}
+        <div className="w-full mt-4">{button}</div>
       </div>
     </CardLayout>
   );

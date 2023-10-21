@@ -47,6 +47,7 @@ const Hero: FC = ({}) => {
           width={512}
           height={512}
           className="object-contain w-full min-w-[25em] max-w-sm row-start-1 lg:row-start-auto"
+          priority
         />
       </div>
     </div>

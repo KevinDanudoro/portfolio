@@ -21,16 +21,7 @@ const Skill: FC<SkillProps> = ({}) => {
           </p>
         </div>
         <div className="flex flex-col flex-wrap lg:w-full sm:w-1/2 w-full aspect-square content-center gap-x-4 lg:row-start-auto row-start-2">
-          <CardLayout className="w-[42%] first:mt-0 mt-4 aspect-square flex flex-col justify-center gap-2 font-medium text-xl items-center">
-            <Image
-              src="/image/tailwind-icon.png"
-              alt="Tailwind Icon"
-              width={80}
-              height={100}
-            />
-            <small>Tailwind</small>
-          </CardLayout>
-          <CardLayout className="w-[42%] first:mt-0 mt-4 aspect-square flex flex-col justify-center gap-2 font-medium text-xl items-center">
+          <CardLayout className="w-[42%] h-auto first:mt-0 mt-4 aspect-square flex flex-col justify-center gap-2 font-medium text-xl items-center">
             <Image
               src="/image/nextjs-icon.png"
               alt="Nextjs Icon"
@@ -39,23 +30,36 @@ const Skill: FC<SkillProps> = ({}) => {
             />
             <small>Next JS</small>
           </CardLayout>
-          <CardLayout className="w-[42%] first:mt-0 mt-4 aspect-square flex flex-col justify-center gap-2 font-medium text-xl items-center">
+          <CardLayout className="w-[42%] h-auto first:mt-0 mt-4 aspect-square flex flex-col justify-center gap-2 font-medium text-xl items-center">
             <Image
-              src="/image/react-icon.png"
-              alt="React Icon"
+              src="/image/android-icon.png"
+              alt="Android Icon"
               width={80}
               height={100}
             />
-            <small>React JS</small>
+            <small className="mt-2">Android</small>
           </CardLayout>
-          <CardLayout className="w-[42%] first:mt-0 mt-4 aspect-square flex flex-col justify-center gap-2 font-medium text-xl items-center">
+          <CardLayout className="w-[42%] h-auto first:mt-0 mt-4 aspect-square flex flex-col justify-center gap-2 font-medium text-xl items-center">
             <Image
-              src="/image/redux-icon.png"
-              alt="Redux Icon"
+              src="/image/tailwind-icon.png"
+              alt="Tailwind Icon"
+              width={80}
+              height={100}
+            />
+            <small>Tailwind</small>
+          </CardLayout>
+          <CardLayout className="w-[42%] h-auto first:mt-0 mt-4 aspect-square flex flex-col justify-center gap-2 font-medium text-xl items-center">
+            <Image
+              src="/image/compose-icon.png"
+              alt="Jetpack Compose Icon"
               width={80}
               height={80}
             />
-            <small>Redux</small>
+            <small className="leading-5 text-center">
+              Jetpack
+              <br />
+              Compose
+            </small>
           </CardLayout>
         </div>
       </div>

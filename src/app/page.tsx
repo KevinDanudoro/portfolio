@@ -1,3 +1,4 @@
+import Certificate from "@/components/Section/Certificate";
 import Hero from "@/components/Section/Hero";
 import Introduction from "@/components/Section/Introduction";
 import Portfolio from "@/components/Section/Portfolio";
@@ -17,6 +18,9 @@ export default function Home() {
       </section>
       <section>
         <Portfolio />
+      </section>
+      <section>
+        <Certificate />
       </section>
     </main>
   );

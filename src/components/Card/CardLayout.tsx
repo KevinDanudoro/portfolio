@@ -8,10 +8,7 @@ interface CardLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const CardLayout: FC<CardLayoutProps> = ({ children, className, ...props }) => {
   return (
-    <div
-      className={cn("p-4 rounded-md shadow-lg bg-white", className)}
-      {...props}
-    >
+    <div className={cn("rounded-md shadow-lg bg-white", className)} {...props}>
       {children}
     </div>
   );
