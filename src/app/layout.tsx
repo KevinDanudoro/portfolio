@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import Topbar from "@/components/Navbar/Topbar";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -23,6 +24,9 @@ export default function RootLayout({
           <Topbar />
         </header>
         {children}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

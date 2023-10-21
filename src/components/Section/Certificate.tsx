@@ -1,9 +1,19 @@
 import React from "react";
 import type { FC } from "react";
+
+import { ArrowRight } from "lucide-react";
+
 import Slider from "../Slider/Slider";
 import Card from "../Card/Card";
 import Button from "../Button/Button";
-import { ArrowRight } from "lucide-react";
+
+const CredentialButton = ({ href }: { href: string }) => (
+  <a target="_blank" href={href}>
+    <Button variant="outline">
+      Credential <ArrowRight />
+    </Button>
+  </a>
+);
 
 const certificateContents = [
   {
@@ -11,9 +21,7 @@ const certificateContents = [
     header: "Sep 23, 2023 - Sep 23, 2026",
     image: "/image/dicoding-logo.jpg",
     button: (
-      <Button variant="outline">
-        Credential <ArrowRight />
-      </Button>
+      <CredentialButton href="https://www.dicoding.com/certificates/81P277EDNZOY" />
     ),
   },
   {
@@ -21,9 +29,7 @@ const certificateContents = [
     header: "May 25, 2023 - May 25, 2026",
     image: "/image/dicoding-logo.jpg",
     button: (
-      <Button variant="outline">
-        Credential <ArrowRight />
-      </Button>
+      <CredentialButton href="https://www.dicoding.com/certificates/NVP7OQG8WPR0" />
     ),
   },
   {
@@ -31,9 +37,7 @@ const certificateContents = [
     header: "Feb 26, 2023 - Feb 26, 2026",
     image: "/image/dicoding-logo.jpg",
     button: (
-      <Button variant="outline">
-        Credential <ArrowRight />
-      </Button>
+      <CredentialButton href="https://www.dicoding.com/certificates/6RPN6N2D8P2M" />
     ),
   },
   {
@@ -41,9 +45,7 @@ const certificateContents = [
     header: "Oct 17, 2023 - Oct 17, 2026",
     image: "/image/dicoding-logo.jpg",
     button: (
-      <Button variant="outline">
-        Credential <ArrowRight />
-      </Button>
+      <CredentialButton href="https://www.dicoding.com/certificates/JMZV10G93XN9" />
     ),
   },
   {
@@ -51,9 +53,7 @@ const certificateContents = [
     header: "May 18, 2023 - May 18, 2026",
     image: "/image/dicoding-logo.jpg",
     button: (
-      <Button variant="outline">
-        Credential <ArrowRight />
-      </Button>
+      <CredentialButton href="https://www.dicoding.com/certificates/NVP7O80NRPR0" />
     ),
   },
 ];

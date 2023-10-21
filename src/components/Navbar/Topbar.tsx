@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import Logo from "../Logo/Logo";
 import Button from "../Button/Button";
+import LinkList from "./LinkList";
 
 interface TopbarProps {}
 
@@ -14,26 +15,7 @@ const Topbar: FC<TopbarProps> = ({}) => {
         <Logo />
 
         <nav className="flex gap-8 items-center">
-          <ul className="flex gap-8 font-normal">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/">About</Link>
-            </li>
-            <li>
-              <Link href="/">Process</Link>
-            </li>
-            <li>
-              <Link href="/">Portfolio</Link>
-            </li>
-            <li>
-              <Link href="/">Blog</Link>
-            </li>
-            <li>
-              <Link href="/">Service</Link>
-            </li>
-          </ul>
+          <LinkList />
           <Link href="/">
             <Button>Contact</Button>
           </Link>
