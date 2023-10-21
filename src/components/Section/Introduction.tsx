@@ -21,7 +21,7 @@ const Introduction: FC<IntroductionProps> = ({}) => {
           />
 
           <div className="flex flex-col gap-4">
-            <h2 className="text-2xl font-semibold">
+            <h2 className="text-3xl font-semibold">
               I am Professional User Experience Designer
             </h2>
 
@@ -36,8 +36,8 @@ const Introduction: FC<IntroductionProps> = ({}) => {
 
             <div className="flex gap-2 mt-2">
               <Button>My Project</Button>
-              <Button variant="outline" icon={Download}>
-                Download CV
+              <Button variant="outline" className="flex items-center">
+                <Download /> Download CV
               </Button>
             </div>
           </div>

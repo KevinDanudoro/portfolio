@@ -1,19 +1,16 @@
 import React from "react";
 import type { FC } from "react";
 import { cn } from "@/lib/utils";
-import { LucideIcon } from "lucide-react";
 
 interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   variant?: "default" | "outline";
-  icon?: LucideIcon;
 }
 
 const Button: FC<ButtonProps> = ({
   variant = "default",
   children,
   className,
-  icon: Icon,
   ...props
 }) => {
   if (variant === "default")
@@ -25,7 +22,6 @@ const Button: FC<ButtonProps> = ({
         )}
         {...props}
       >
-        {Icon && <Icon />}
         {children}
       </button>
     );
@@ -38,7 +34,6 @@ const Button: FC<ButtonProps> = ({
       )}
       {...props}
     >
-      {Icon && <Icon />}
       {children}
     </button>
   );

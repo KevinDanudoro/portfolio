@@ -1,6 +1,7 @@
-import Hero from "@/components/section/Hero";
-import Introduction from "@/components/section/Introduction";
-import Skill from "@/components/section/Skill";
+import Hero from "@/components/Section/Hero";
+import Introduction from "@/components/Section/Introduction";
+import Portfolio from "@/components/Section/Portfolio";
+import Skill from "@/components/Section/Skill";
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
       <section className="-mt-20">
         <Skill />
       </section>
-      a
+      <section>
+        <Portfolio />
+      </section>
     </main>
   );
 }

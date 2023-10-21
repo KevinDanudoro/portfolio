@@ -7,10 +7,10 @@ interface SkillProps {}
 
 const Skill: FC<SkillProps> = ({}) => {
   return (
-    <div className="bg-gray w-full min-h-[90vh] sm:min-h-[120vh] flex justify-center items-center">
-      <div className="lg:w-content-lg w-content grid lg:grid-cols-2 lg:grid-rows-none grid-rows-[auto,1fr] lg:gap-32 gap-12 mt-12 items-center justify-items-center lg:justify-items-start">
+    <div className="bg-gray w-full h-fit flex justify-center items-center">
+      <div className="lg:w-content-lg w-content grid lg:grid-cols-2 lg:grid-rows-none grid-rows-[auto,1fr] lg:gap-32 gap-12 mt-28 mb-20 items-center justify-items-center lg:justify-items-start">
         <div className="lg:w-auto sm:w-[60%] w-full">
-          <h2 className="text-2xl font-semibold">Skills</h2>
+          <h2 className="text-3xl font-semibold">Skills</h2>
           <p className="mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
             arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices

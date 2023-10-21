@@ -19,6 +19,9 @@ const config: Config = {
         purple: "#A53DFF",
         "dark-purple": "#8431CC",
       },
+      boxShadow: {
+        card: "0 0 12px rgba(0,0,0,0.1)",
+      },
       backgroundImage: {
         "purple-gradient": "radial-gradient(circle,#DA4DF177,transparent 50%);",
         "blue-gradient": "radial-gradient(circle,#C4F5E977,transparent 50%);",
