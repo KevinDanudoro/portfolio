@@ -9,7 +9,7 @@ interface IntroductionProps {}
 
 const Introduction: FC<IntroductionProps> = ({}) => {
   return (
-    <div className="w-full flex justify-center mt-10">
+    <div className="w-full flex justify-center lg:mt-10 mt-20">
       <CardLayout className="w-content lg:w-content-lg p-10">
         <div className="flex lg:gap-20 gap-10 items-center md:flex-row flex-col">
           <Image

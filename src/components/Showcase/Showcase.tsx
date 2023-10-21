@@ -11,8 +11,8 @@ const Showcase: FC<ShowcaseProps> = ({ className, title, desc, ...props }) => {
   return (
     <div
       className={cn(
-        className,
-        "bg-gray p-4 h-full flex items-center justify-center"
+        "bg-gray p-4 h-full flex items-center justify-center",
+        className
       )}
       {...props}
     >

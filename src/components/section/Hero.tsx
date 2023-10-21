@@ -1,12 +1,11 @@
 import React from "react";
 import type { FC } from "react";
 import Image from "next/image";
+
 import Button from "../Button/Button";
 import Showcase from "../Showcase/Showcase";
 
-interface HeroProps {}
-
-const Hero: FC<HeroProps> = ({}) => {
+const Hero: FC = ({}) => {
   return (
     <div className="w-full flex justify-center">
       <div className="lg:w-content-lg w-content grid lg:grid-cols-[1fr,auto] grid-rows-[auto,1fr] mt-32 lg:gap-20 gap-14 lg:items-center lg:justify-items-start justify-items-center">
@@ -47,7 +46,7 @@ const Hero: FC<HeroProps> = ({}) => {
           alt="hero image"
           width={512}
           height={512}
-          className="object-contain max-w-sm row-start-1 lg:row-start-auto"
+          className="object-contain w-full min-w-[25em] max-w-sm row-start-1 lg:row-start-auto"
         />
       </div>
     </div>
