@@ -62,7 +62,7 @@ const Hero: FC = ({}) => {
               <Showcase title="3.94" desc="GPA" />
             </li>
             <li>
-              <Showcase className="rounded-r-md" title="2" desc="Projects" />
+              <Showcase className="rounded-r-md" title="3" desc="Projects" />
             </li>
           </ul>
         </div>
