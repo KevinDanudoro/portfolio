@@ -48,17 +48,19 @@ const Topbar: FC<TopbarProps> = ({}) => {
             </div>
 
             <div
-              className={`fixed top-0 bottom-0 right-0 w-[40vw] duration-150 translate-x-[100%] bg-gray flex flex-col justify-center items-center ${
-                isOpen ? "translate-x-0" : ""
+              className={`fixed top-0 bottom-0 right-0 w-[40vw] duration-150 bg-gray flex flex-col justify-center items-center  min-h-fit px-24 ${
+                isOpen ? "translate-x-0" : "translate-x-[100%]"
               }`}
             >
               <LinkList className="flex flex-col items-center gap-12" />
-              <EmailButton>Contact</EmailButton>
+              <EmailButton className="mt-8">Contact</EmailButton>
             </div>
 
             <div
-              className={`fixed inset-0 bg-dark-gray/30 -z-10 duration-150 transition-opacity translate-x-[100%] ${
-                isOpen ? "opacity-100 translate-x-0" : "opacity-0"
+              className={`fixed inset-0 bg-dark-gray/30 -z-10 duration-150 transition-opacity ${
+                isOpen
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-[100%]"
               }`}
               onClick={() => isOpen && setisOpen((prev) => !prev)}
             />
