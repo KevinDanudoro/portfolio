@@ -10,12 +10,17 @@ const portfolioContents = [
     header: "Front-End Website",
     title: "Admin Dashboard",
     desc: "Admin dashboard that shows summary data in the form of charts. Provided with data table and form management for manipulating data.",
-    image: "/image/hero.svg",
+    image: "/image/portfolio1.png",
     button: (
-      <Button className="w-fit" variant="outline">
-        Check Out
-        <ArrowRight />
-      </Button>
+      <a
+        href="https://admin-dashboard-one-sand.vercel.app/reports/overview"
+        target="_blank"
+      >
+        <Button className="w-fit" variant="outline">
+          Check Out
+          <ArrowRight />
+        </Button>
+      </a>
     ),
   },
   {
@@ -24,7 +29,7 @@ const portfolioContents = [
     desc: "The village profile page contains general information about the village as well as the activities conducted.",
     image: "/image/hero.svg",
     button: (
-      <Button className="w-fit" variant="outline">
+      <Button className="w-fit" variant="disabled">
         Check Out
         <ArrowRight />
       </Button>
@@ -36,7 +41,7 @@ const portfolioContents = [
     desc: "E-Commerce website to purchase video editing services for wedding ceremony.",
     image: "/image/hero.svg",
     button: (
-      <Button className="w-fit" variant="outline">
+      <Button className="w-fit" variant="disabled">
         Check Out
         <ArrowRight />
       </Button>

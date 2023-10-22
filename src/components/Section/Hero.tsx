@@ -34,7 +34,21 @@ const Hero: FC = ({}) => {
             {`I'm a computer engineering undergraduate at Brawijaya University. Experienced and passionate to web and Android app development. I'm dedicated to a continuous learning mindset, constantly seeking new knowledge and skills in diverse software development areas.`}
           </p>
 
-          <EmailButton className="mt-4">Say Hello!</EmailButton>
+          <div className="mt-4 flex w-full justify-between">
+            <EmailButton>Say Hello!</EmailButton>
+            <a
+              href="https://www.linkedin.com/in/kevin-danudoro-54540a230/"
+              target="_blank"
+            >
+              <Image
+                src="/image/linkedin-icon.svg"
+                alt="linkedin icon"
+                width={36}
+                height={36}
+                priority
+              />
+            </a>
+          </div>
 
           <ul className="grid grid-cols-3 gap-2 mt-12" aria-label="achievement">
             <li>

@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  variant?: "default" | "outline";
+  variant?: "default" | "outline" | "disabled";
 }
 
 const Button: FC<ButtonProps> = ({
@@ -19,6 +19,19 @@ const Button: FC<ButtonProps> = ({
         className={cn(
           className,
           "px-4 py-2 bg-purple hover:bg-dark-purple duration-150 rounded-md text-white font-semibold text-base flex gap-2"
+        )}
+        {...props}
+      >
+        {children}
+      </button>
+    );
+
+  if (variant === "disabled")
+    return (
+      <button
+        className={cn(
+          className,
+          "px-4 py-2 bg-gray duration-150 rounded-md text-dark-gray font-semibold text-base flex gap-2 cursor-default"
         )}
         {...props}
       >

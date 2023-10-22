@@ -8,7 +8,11 @@ interface EmailButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
 
 const EmailButton: FC<EmailButtonProps> = ({ children, ...props }) => {
   return (
-    <a href="mailto:kevindanudoro68@gmail.com" target="_blank">
+    <a
+      href="mailto:kevindanudoro68@gmail.com"
+      target="_blank"
+      className="w-fit"
+    >
       <Button {...props}>{children}</Button>
     </a>
   );

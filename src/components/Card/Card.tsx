@@ -32,9 +32,9 @@ const Card: FC<CardProps> = ({
       <Image
         src={image}
         alt="card image"
-        width={256}
-        height={256}
-        className="object-cover w-full"
+        width={1024}
+        height={1024}
+        className="object-cover w-full aspect-square object-left"
       />
       <div className="p-4 flex flex-col gap-1">
         {header && (

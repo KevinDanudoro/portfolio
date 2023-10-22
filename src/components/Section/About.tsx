@@ -38,9 +38,11 @@ const About: FC<AboutProps> = ({}) => {
               <Link href="#portfolio">
                 <Button>My Project</Button>
               </Link>
-              <Button variant="outline" className="flex items-center">
-                <Download /> Download CV
-              </Button>
+              <a href="/resume/resume.pdf" target="_blank">
+                <Button variant="outline" className="flex items-center">
+                  <Download /> Download CV
+                </Button>
+              </a>
             </div>
           </div>
         </div>
