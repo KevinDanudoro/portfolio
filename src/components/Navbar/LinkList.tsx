@@ -1,16 +1,13 @@
 import React from "react";
 import type { FC } from "react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
-interface LinkListProps {
-  color?: "dark" | "light";
-}
+interface LinkListProps extends React.HTMLAttributes<HTMLUListElement> {}
 
-const LinkList: FC<LinkListProps> = ({ color = "dark" }) => {
+const LinkList: FC<LinkListProps> = ({ className, ...props }) => {
   return (
-    <ul
-      className={`flex gap-8 font-normal ${color === "light" && "text-white"}`}
-    >
+    <ul className={cn("flex gap-8 font-normal", className)} {...props}>
       <li>
         <Link href="#hero">Home</Link>
       </li>

@@ -41,14 +41,6 @@ const certificateContents = [
     ),
   },
   {
-    title: "SOLID Programming",
-    header: "Sep 23, 2023 - Sep 23, 2026",
-    image: "/image/dicoding-logo.jpg",
-    button: (
-      <CredentialButton href="https://www.dicoding.com/certificates/1OP80004VXQK" />
-    ),
-  },
-  {
     title: "Android Beginner",
     header: "Sep 23, 2023 - Sep 23, 2026",
     image: "/image/dicoding-logo.jpg",
@@ -62,6 +54,14 @@ const certificateContents = [
     image: "/image/dicoding-logo.jpg",
     button: (
       <CredentialButton href="https://www.dicoding.com/certificates/NVP7OQG8WPR0" />
+    ),
+  },
+  {
+    title: "SOLID Programming",
+    header: "Sep 23, 2023 - Sep 23, 2026",
+    image: "/image/dicoding-logo.jpg",
+    button: (
+      <CredentialButton href="https://www.dicoding.com/certificates/1OP80004VXQK" />
     ),
   },
   {

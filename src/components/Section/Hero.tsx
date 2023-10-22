@@ -6,6 +6,7 @@ import Showcase from "../Showcase/Showcase";
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import EmailButton from "../Button/EmailButton";
 
 const HeroAnimation = dynamic(() => import("../Animation/HeroAnimation"), {
   loading: () => (
@@ -33,7 +34,7 @@ const Hero: FC = ({}) => {
             {`I'm a computer engineering undergraduate at Brawijaya University. Experienced and passionate to web and Android app development. I'm dedicated to a continuous learning mindset, constantly seeking new knowledge and skills in diverse software development areas.`}
           </p>
 
-          <Button className="mt-4 w-fit">Say Hello!</Button>
+          <EmailButton className="mt-4">Say Hello!</EmailButton>
 
           <ul className="grid grid-cols-3 gap-2 mt-12" aria-label="achievement">
             <li>

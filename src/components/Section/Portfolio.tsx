@@ -1,5 +1,6 @@
 import React from "react";
 import type { FC } from "react";
+
 import Card from "../Card/Card";
 import Button from "../Button/Button";
 import { ArrowRight } from "lucide-react";
@@ -12,7 +13,7 @@ const portfolioContents = [
     image: "/image/hero.svg",
     button: (
       <Button className="w-fit" variant="outline">
-        Case Study
+        Check Out
         <ArrowRight />
       </Button>
     ),
@@ -24,7 +25,7 @@ const portfolioContents = [
     image: "/image/hero.svg",
     button: (
       <Button className="w-fit" variant="outline">
-        Case Study
+        Check Out
         <ArrowRight />
       </Button>
     ),
@@ -36,7 +37,7 @@ const portfolioContents = [
     image: "/image/hero.svg",
     button: (
       <Button className="w-fit" variant="outline">
-        Case Study
+        Check Out
         <ArrowRight />
       </Button>
     ),
