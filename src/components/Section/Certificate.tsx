@@ -1,11 +1,13 @@
 import React from "react";
 import type { FC } from "react";
+import dynamic from "next/dynamic";
 
 import { ArrowRight } from "lucide-react";
 
-import Slider from "../Slider/Slider";
 import Card from "../Card/Card";
 import Button from "../Button/Button";
+
+const Slider = dynamic(() => import("../Slider/Slider"), { ssr: false });
 
 const CredentialButton = ({ href }: { href: string }) => (
   <a target="_blank" href={href}>

@@ -2,14 +2,9 @@
 
 import React from "react";
 import type { FC } from "react";
-import dynamic from "next/dynamic";
 
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-
-const Swiper = dynamic(() => import("swiper/react").then((lib) => lib.Swiper));
-const SwiperSlide = dynamic(() =>
-  import("swiper/react").then((lib) => lib.SwiperSlide)
-);
 
 import "swiper/css";
 import "swiper/css/pagination";
