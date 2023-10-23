@@ -1,25 +1,11 @@
 import React from "react";
 import type { FC } from "react";
 
-import Button from "../Button/Button";
 import Showcase from "../Showcase/Showcase";
 
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import EmailButton from "../Button/EmailButton";
-
-const HeroAnimation = dynamic(() => import("../Animation/HeroAnimation"), {
-  loading: () => (
-    <Image
-      src="/image/portfolio.png"
-      alt="hero image blur"
-      width={128}
-      height={128}
-      className="object-contain w-full min-w-[25em] max-w-sm row-start-1 lg:row-start-auto"
-      priority
-    />
-  ),
-});
+import HeroAnimation from "../Animation/HeroAnimation";
 
 const Hero: FC = ({}) => {
   return (

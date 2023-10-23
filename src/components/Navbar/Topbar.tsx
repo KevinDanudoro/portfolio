@@ -2,10 +2,8 @@
 
 import React, { useState } from "react";
 import type { FC } from "react";
-import Link from "next/link";
 
 import Logo from "../Logo/Logo";
-import Button from "../Button/Button";
 import LinkList from "./LinkList";
 import EmailButton from "../Button/EmailButton";
 
@@ -48,7 +46,7 @@ const Topbar: FC<TopbarProps> = ({}) => {
             </div>
 
             <div
-              className={`fixed top-0 bottom-0 right-0 w-[40vw] duration-150 bg-gray flex flex-col justify-center items-center  min-h-fit px-24 ${
+              className={`fixed top-0 bottom-0 h-[100vh] right-0 w-[40vw] duration-150 bg-gray flex flex-col justify-center items-center  min-h-fit px-24 ${
                 isOpen ? "translate-x-0" : "translate-x-[100%]"
               }`}
             >
