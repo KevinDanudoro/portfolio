@@ -23,7 +23,7 @@ const About: FC<AboutProps> = ({}) => {
 
           <div className="flex flex-col gap-4">
             <h2 className="text-3xl font-semibold">
-              {"I'am a Junior Front-End Developer"}
+              {"I'am a Front-End Developer"}
             </h2>
 
             <p className="mt-2">

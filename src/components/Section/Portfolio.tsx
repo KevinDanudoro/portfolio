@@ -7,6 +7,20 @@ import { ArrowRight } from "lucide-react";
 
 const portfolioContents = [
   {
+    header: "Full-Stack Website",
+    title: "Issues Tracker Apps",
+    desc: "Web application that helps teams track and manage issues that are encountered during the course of a project",
+    image: "/image/portfolio2.png",
+    button: (
+      <a href="https://next-issues-tracker.vercel.app/" target="_blank">
+        <Button className="w-fit" variant="outline">
+          Check Out
+          <ArrowRight />
+        </Button>
+      </a>
+    ),
+  },
+  {
     header: "Front-End Website",
     title: "Admin Dashboard",
     desc: "Admin dashboard that shows summary data in the form of charts. Provided with data table and form management for manipulating data.",
@@ -27,18 +41,6 @@ const portfolioContents = [
     header: "Front-End Website",
     title: "Village Website",
     desc: "The village profile page contains general information about the village as well as the activities conducted.",
-    image: "/image/hero.svg",
-    button: (
-      <Button className="w-fit" variant="disabled">
-        Check Out
-        <ArrowRight />
-      </Button>
-    ),
-  },
-  {
-    header: "Front-End Website",
-    title: "E-Commerce",
-    desc: "E-Commerce website to purchase video editing services for wedding ceremony.",
     image: "/image/hero.svg",
     button: (
       <Button className="w-fit" variant="disabled">

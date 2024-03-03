@@ -16,24 +16,52 @@ const Hero: FC = ({}) => {
             {"Hello, I'm"} <br />
             Kevin Danudoro
           </h1>
-          <p className="mt-4 whitespace-pre-line">
-            {`I'm a computer engineering undergraduate at Brawijaya University. Experienced and passionate to web and Android app development. I'm dedicated to a continuous learning mindset, constantly seeking new knowledge and skills in diverse software development areas.`}
+          <p className="mt-4 whitespace-pre-line text-base">
+            Computer Engineer fresh graduate at Brawijaya University.
+            Experienced and passionate about web and Android app development.
+            Capable of working individually and an active team player, also
+            dedicated to a continuous learning mindset, constantly seeking new
+            knowledge and skills in diverse software development areas, with a
+            strong focus on enhancing job efficiency and effectiveness.
           </p>
 
           <div className="mt-4 flex w-full justify-between">
             <EmailButton>Say Hello!</EmailButton>
-            <a
-              href="https://www.linkedin.com/in/kevin-danudoro-54540a230/"
-              target="_blank"
-            >
-              <Image
-                src="/image/linkedin-icon.svg"
-                alt="linkedin icon"
-                width={36}
-                height={36}
-                priority
-              />
-            </a>
+
+            <div className="flex flex-row gap-3">
+              <a
+                href="https://www.linkedin.com/in/kevin-danudoro-54540a230/"
+                target="_blank"
+              >
+                <Image
+                  src="/image/linkedin-icon.svg"
+                  alt="linkedin icon"
+                  width={36}
+                  height={36}
+                  priority
+                />
+              </a>
+
+              <a href="https://github.com/KevinDanudoro" target="_blank">
+                <Image
+                  src="/image/github-icon.png"
+                  alt="github icon"
+                  width={36}
+                  height={36}
+                  priority
+                />
+              </a>
+
+              <a href="https://wa.me/6281380859045" target="_blank">
+                <Image
+                  src="/image/whatsapp-icon.png"
+                  alt="whatsapp icon"
+                  width={36}
+                  height={36}
+                  priority
+                />
+              </a>
+            </div>
           </div>
 
           <ul className="grid grid-cols-3 gap-2 mt-12" aria-label="achievement">

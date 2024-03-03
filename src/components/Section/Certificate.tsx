@@ -75,6 +75,14 @@ const certificateContents = [
     ),
   },
   {
+    title: "Back-End Pemula",
+    header: "Dec 18, 2023 - Dec 18, 2026",
+    image: "/image/dicoding-logo.jpg",
+    button: (
+      <CredentialButton href="https://www.dicoding.com/certificates/4EXGK9V8DZRL" />
+    ),
+  },
+  {
     title: "JavaScript",
     header: "Oct 17, 2023 - Oct 17, 2026",
     image: "/image/dicoding-logo.jpg",

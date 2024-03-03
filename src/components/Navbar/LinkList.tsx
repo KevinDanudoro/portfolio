@@ -15,7 +15,7 @@ const LinkList: FC<LinkListProps> = ({ className, ...props }) => {
         <Link href="#about">About</Link>
       </li>
       <li>
-        <Link href="#skills">skills</Link>
+        <Link href="#skills">Skills</Link>
       </li>
       <li>
         <Link href="#portfolio">Portfolio</Link>
